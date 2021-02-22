@@ -1,24 +1,16 @@
-# README
+Menus
+ex breakfast menu, coffee, food
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Menu
+title string
 
-Things you may want to cover:
+Item
+    Item_name string 
+    price float
+    menu_id fk 
 
-* Ruby version
+    belongs to menu
 
-* System dependencies
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
