@@ -12,5 +12,8 @@ Item
     belongs to menu
 
 
-
+food menu 
+    muffin $2.00
+    croissant 2.50
+    
 
