@@ -18,7 +18,7 @@ class Cafe extends Component {
 
     addMenu = () => {
         //add to the db
-        axios.get('/api/menus',  { menu }) // needs to pass menu to know what to create
+        axios.get('/api/menus',  { Cafe }) // needs to pass menu to know what to create
         //ad to the state
         .then(res => {
             const { menus } = this.state;
