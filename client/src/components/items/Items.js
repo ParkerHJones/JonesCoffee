@@ -7,7 +7,7 @@ class Items extends Component {
     componentDidMount() {
         axios.get(`/api/menus/${this.props.menuId}/items`)
         .then( res => {
-            const { items } this.state
+            const { items } = this.state
             this.setState({ items: [items, res.data]})
         })
     }
