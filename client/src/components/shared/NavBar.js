@@ -16,9 +16,9 @@ const Navbar = () => (
             </Menu.Item>
         </Link>
 
-        <Link to='/menus'>
+        <Link to='/cafe'>
             <Menu.Item>
-                Menu
+                Cafe
             </Menu.Item>
         </Link>
 
