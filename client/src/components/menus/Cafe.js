@@ -1,6 +1,7 @@
-import { Component } from 'react';
+import { Component, useDebugValue } from 'react';
 import axios from 'axios'; 
 import MenuForm from './MenuForm';
+import MenuList from'./MenuList';
 
 class Cafe extends Component {
     state = { menus: [] }
@@ -39,10 +40,12 @@ class Cafe extends Component {
     }
 
     render() {
+        const { menus } = this.state
         return (
             <>
             <h1> The Cafe </h1>
             <MenuForm addMenu={this.addMenu} />
+            <MenuList menus={menus}/>
             </>
         )
     }

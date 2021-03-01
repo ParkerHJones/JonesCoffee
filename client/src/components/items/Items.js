@@ -8,7 +8,10 @@ class Items extends Component {
         axios.get(`/api/menus/${this.props.menuId}/items`)
         .then( res => {
             const { items } = this.state
-            this.setState({ items: [items, res.data]})
+            this.setState({ items: [...items, res.data]})
+        })
+        .catch( err => {
+            console.log(err);
         })
     }
 
